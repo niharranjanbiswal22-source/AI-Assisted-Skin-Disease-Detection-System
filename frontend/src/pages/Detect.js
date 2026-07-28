@@ -26,7 +26,7 @@ function Detect() {
       setLoading(true);
 
       const res = await axios.post(
-        `http://localhost:8000/predict/image?language=${lang}`,
+      `https://ai-assisted-skin-disease-detection-system.onrender.com/predict/image?language=${lang}`,
         formData
       );
 
@@ -51,7 +51,7 @@ function Detect() {
 
     try {
       const res = await axios.post(
-        "http://localhost:8000/generate-report",
+       "https://ai-assisted-skin-disease-detection-system.onrender.com/generate-report",
         data,
         { responseType: "blob" }
       );
