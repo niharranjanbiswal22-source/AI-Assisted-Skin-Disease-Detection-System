@@ -30,7 +30,7 @@ function Chatbot() {
     try {
       setLoading(true);
 
-      const res = await axios.post("http://localhost:8000/chat", {
+      const res = await axios.post("https://ai-assisted-skin-disease-detection-system.onrender.com/chat", {
         msg: userMsg,
         language: lang
       });
